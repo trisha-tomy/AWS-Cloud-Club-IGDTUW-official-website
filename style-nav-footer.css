@@ -21,6 +21,10 @@
   margin-top: 7px;
 }
 
+.nav-left h3:hover {
+  text-shadow: 2px 2px 2px rgb(255, 110, 110);
+}
+
 .navbar .nav-right {
   text-align: center;
   display: flex;
@@ -29,7 +33,7 @@
 }
 
 .navbar a {
-  color: var(--navbar-text-color);
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -37,7 +41,8 @@
 }
 
 .navbar a:hover {
-  color: var(--navbar-text-hover-color);
+  color: rgb(63, 0, 50);
+  text-shadow: 2px 2px 2px rgb(255, 110, 110);
 }
 
 @media screen and (max-width: 768px) {
