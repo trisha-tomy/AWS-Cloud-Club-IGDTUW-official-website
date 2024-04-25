@@ -9,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 0.8;
   position: relative;
   overflow-x: hidden;
 }
@@ -223,17 +223,18 @@ body {
 }
 
 .cores-card img {
-  width: 200px;
+  width: 235px;
   /* height: 100% !important; */
-  height: 230px;
+  height: 267px;
   border-radius: 8px;
   object-fit: cover;
 }
 
 .cores-details {
   padding: 15px;
-  height: 80px;
-  width: 170px;
+  height: 65px;
+  width: 205px;
+  margin-top: 10px;
   /* text-align: center; */
   /* background-color: #f8f8f8; */
 }
@@ -297,6 +298,12 @@ body {
 @media screen and (max-width: 768px) {
   .cores-container{
     padding: 20px;
+    
+  }
+  .cores-container-captain{
+    padding: 20px;
+    max-width: 80%;
+    
   }
   .cores-card {
     padding: 14px;
@@ -304,19 +311,20 @@ body {
     overflow:visible;
   }
   .cores-card img{
-    width: 160px;
-    height: 190px;
+    width: 200px;
+    height: 267px;
     border-radius: 8px;
     object-fit: cover;
     box-sizing:content-box;
   }
   .cores-details {
     padding: 10px;
-    height: 165px;
-    width: 150px;
+    height: 65px;
+    width: 185px;
   }
   .cores-details h3{
-    margin-top: 0px;
+    margin-top: 10px;
+    font-size: 1.06em;
   }
   .cores-details p:first-of-type{    
     font-size: x-small;
@@ -324,8 +332,8 @@ body {
   .linkedin-icon-cores{
     height: 74%;
     width: 140px;
-    top: 112px;
-    left: 95px;
+    top: 50%;
+    left: 50%;
   }
   .cores-card {
     opacity: 0;
