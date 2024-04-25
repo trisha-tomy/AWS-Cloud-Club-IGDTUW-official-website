@@ -7,13 +7,12 @@
 /* Nav Bar style (Payal) */
 
 .navbar {
-  background-color: var(--navbar-bg-color);
+  background-color: rgba(117, 117, 117, 0.7); 
   overflow: hidden;
   display: flex;
   justify-content: space-around;
   width: 100%;
   max-width: 100vw;
-  height: 70px;
 }
 
 .navbar .nav-left {
@@ -21,8 +20,9 @@
   margin-top: 7px;
 }
 
-.nav-left h3:hover {
-  text-shadow: 2px 2px 2px rgb(255, 110, 110);
+.nav-left h3 {
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 .navbar .nav-right {
@@ -33,22 +33,46 @@
 }
 
 .navbar a {
-  color: black;
+  color: rgb(198, 194, 194);
+  text-shadow: 2px 2px 2px rgb(7, 0, 34);
   text-align: center;
   padding: 14px 16px;
+  padding-bottom: 0px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.navbar a:hover {
-  color: rgb(63, 0, 50);
-  text-shadow: 2px 2px 2px rgb(255, 110, 110);
+.navbar a {
+  position: relative;
 }
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  margin-left: 10px;
+  width: 83%;
+  height: 2px;
+  background-color: #080046;
+  border-radius: 10px;
+  transform-origin: bottom left;
+  transform: scaleX(0); 
+  transition: transform 0.4s ease-in-out; 
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1); 
+}
+
 
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    height: 90px;
   }
   .navbar .nav-right {
     flex-direction: row;
