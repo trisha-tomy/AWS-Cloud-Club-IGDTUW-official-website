@@ -8,6 +8,7 @@
 
 .navbar {
   background-color: rgba(117, 117, 117, 0.7); 
+  font-size: 1.2rem;
   overflow: hidden;
   display: flex;
   justify-content: space-around;
