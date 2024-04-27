@@ -294,7 +294,7 @@ body {
 
 .cores-card {
   position: relative;
-  /* width: 350px; */
+  width: 200px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -308,9 +308,9 @@ body {
 }
 
 .cores-card img {
-  width: 235px;
+  width: 200px;
   /* height: 100% !important; */
-  height: 267px;
+  height: 232px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -318,7 +318,7 @@ body {
 .cores-details {
   padding: 15px;
   height: 65px;
-  width: 205px;
+  width: 170px;
   margin-top: 10px;
   /* text-align: center; */
   /* background-color: #f8f8f8; */
@@ -404,20 +404,19 @@ body {
   }
   .cores-details {
     padding: 10px;
-    height: 65px;
-    width: 185px;
+    height: 55px;
+    width: 180px;
   }
   .cores-details h3{
-    margin-top: 10px;
     font-size: 1.06em;
   }
   .cores-details p:first-of-type{    
-    font-size: x-small;
+    font-size: small;
   }  
   .linkedin-icon-cores{
-    height: 74%;
-    width: 140px;
-    top: 50%;
+    height: 267px;
+    width: 200px;
+    top: 38%;
     left: 50%;
   }
   .cores-card {
