@@ -47,6 +47,155 @@
         </div>
       </section>
     </section>
+
+    <!-- (Carousel) Samriddhi Tiwari -->
+    <div class="carousel-heading">
+      <div class="text">
+        <h1>Glimpse of <span>Past Events</span></h1>
+        
+        <!-- <div class="arrow">
+          <div class="arrow-top"></div>
+          <div class="arrow-bottom"></div>
+        </div> -->
+      </div>
+      <a href="">
+        <button class="arrow-button"></button>
+      </a>
+            
+    </div>
+
+    <section class="carousel-section">
+      
+      <div class="carousel"> 
+        <div class="carousel-item"> 
+            <div class="slide-image"
+              style="background-image: url('assets/aws photo/01.jpg');"> 
+            </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/02.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/03.jpg');"> 
+          </div> 
+        </div> 
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/04.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/05.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/06.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/07.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/08.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/09.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/10.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/11.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/12.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/13.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/14.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/15.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/16.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/17.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/18.jpg');"> 
+          </div> 
+        </div>
+        <div class="carousel-item"> 
+          <div class="slide-image"
+            style="background-image: url('assets/aws photo/19.jpg');"> 
+          </div> 
+        </div>
+
+        
+    </div>
+    
+    <script>
+      window.onload = function () { 
+        let slides = document.getElementsByClassName('carousel-item'); 
+        function addActive(slide) { 
+            slide.classList.add('active'); 
+        } 
+        function removeActive(slide) { 
+            slide.classList.remove('active'); 
+        } 
+        addActive(slides[0]); 
+        setInterval(function () { 
+          for (let i = 0; i < slides.length; i++) { 
+              if (i + 1 == slides.length) { 
+                  addActive(slides[0]); 
+                  setTimeout(removeActive, 350, slides[i]); 
+                  break; 
+              } 
+              if (slides[i].classList.contains('active')) { 
+                  setTimeout(removeActive, 350, slides[i]); 
+                  addActive(slides[i + 1]); 
+                  break; 
+              } 
+          } 
+        }, 2000); 
+      };
+    </script>
+
+    </section>
+<!-- Carousel ends-->
+
     <!-- Team(Trisha) -->
     <section id="cores" class="cores-section">
       <h2 class="sub-heading">Cores</h2>
