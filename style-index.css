@@ -446,3 +446,92 @@ body {
   padding: 10px;
   font-size: 25px;
 }
+
+
+/* Prospects css */
+h1 {
+  text-align: center;
+}
+
+.prospects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.box p {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box {
+  background-position: center bottom 50px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  flex-basis: calc(25% - 20px);
+  height: 320px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-out;
+  background-color: black;
+  background-image: url("source/1.png");
+  background-position: 50%;
+  border-radius: 15px;
+  -webkit-transition: height 0.4s ease-in-out;
+  -moz-transition: height 0.4s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-20px);
+  cursor: grabbing;
+}
+
+.box:hover p {
+  font-size: bold;
+  color: rgb(239, 197, 118);
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    flex-basis: 100%;
+  }
+  .box:hover {
+    top: -10px;
+    transform: translateY(-10px);
+    transition: transform 0.2s ease-out;
+  }
+}
+.manymore {
+  opacity: 1;
+  text-align: center;
+  font-size: 20px;
+}
+h1:hover {
+  opacity: 1;
+  text-decoration: underline;
+  font-size: 35px;
+  transition: transform 2s ease-out;
+  color: #ff9900e7;
+}
+.manymore:hover {
+  transition: transform 2s ease-out;
+  font-size: 20px;
+}
+
+/* Prospect css ends */
