@@ -261,6 +261,108 @@ body {
   left: 0;
 }
 
+/*  ...Carousel Section...  */
+.carousel-heading {
+  background-color:var(--background-color);
+  text-align: center;
+  padding: 10px 0;
+  color: #333;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+.carousel-heading h1 {
+  margin-bottom: 10px;
+}
+.carousel-heading .text span {
+  color: #000;
+}
+.carousel-heading .text {
+    text-align: center; 
+  margin-right: 20px;
+}
+.carousel-section {
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 10px 0 30px 0;
+  color: #333; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
+.carousel { 
+  position: relative; 
+  width: 600px; 
+  height: 340px; 
+  overflow: hidden; 
+  background-color: #cdcdcd; 
+  border: 10px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+.carousel-item .slide-image { 
+  width: 100%; 
+  height: 340px; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+} 
+.carousel-item { 
+  position: absolute; 
+  width: 100%; 
+  height: 270px; 
+  border: none; 
+  top: 0; 
+  left: 100%; 
+  border-radius: 8px;
+} 
+.carousel-item.active { 
+  left: 0; 
+  transition: all 0.4s ease-out; 
+} 
+.carousel-item div { 
+  height: 100%; 
+}
+.arrow-button {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #333;
+  padding: -2px 5px 0;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+.arrow-button:hover {
+  background-color: #333;
+  color: white;
+}
+.arrow-button::after {
+  content: "\2192";
+  margin: 0 5px; 
+  font-size: 20px;
+  padding:0;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-heading h1 {
+    font-size: 1.5rem;
+  }
+  .carousel {
+    width: 350px; 
+    height: 198px;
+    border: 8px solid white;
+  }  
+  .carousel-item .slide-image {
+    height: 198px;
+  }
+  .arrow-button::after {
+    font-size: 16px;
+  }
+}
+/*  carousel section ends*/
+
 /* ... cores ... */
 
 .cores-section {
