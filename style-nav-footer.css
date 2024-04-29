@@ -88,4 +88,159 @@
 
 /* Nav style end */
 
+/* faq sec */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.faq-container {
+  line-height: 1;
+  margin: 0 auto;
+  background-color: #94b0c9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.636);
+  padding: 23px 47px;
+}
+
+
+.faq-question:hover {
+  background-color: #94b0c97c;
+  opacity: 0.5;
+}
+
+.faq-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-question {
+  margin: 20px auto;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::before{
+  margin-left: 10px;
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 2rem;
+  line-height: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.faq-answer {
+  margin: 20px auto;
+  line-height: 1.4;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+.faq-item.active .faq-question::before {
+  transform: rotate(45deg);
+}
+
+/* Media query for extra small screens (up to 576px) */
+@media screen and (max-width: 576px) {
+  .faq-question {
+    font-size: 17px;
+    /* Adjust font size for extra small screens */
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+
+  .faq-heading {
+    font-size: 20px;
+  }
+}
+
+/* Media query for small screens (between 577px and 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .faq-question {
+    width: 85%;
+    font-size: 22px;
+    /* Adjust font size for small screens */
+  }
+
+  .faq-answer {
+    width: 85%;
+    font-size: 20px;
+  }
+
+  .faq-heading {
+    font-size: 25px;
+  }
+}
+
+/* Media query for medium screens (between 769px and 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .faq-question {
+    width: 70%;
+    font-size: 23px;
+    /* Adjust font size for medium screens */
+  }
+
+  .faq-answer {
+    width: 70%;
+    font-size: 24px;
+  }
+
+  .faq-heading {
+    font-size: 26px;
+  }
+}
+
+
+
+/* Media query for large screens (between 993px and 1200px) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .faq-question {
+    width: 60%;
+    font-size: 24px;
+    /* Adjust font size for large screens */
+  }
+
+  .faq-answer {
+    width: 60%;
+    font-size: 22px;
+  }
+
+  .faq-heading {
+    font-size: 27px;
+  }
+}
+
+/* Media query for extra large screens (above 1200px) */
+@media screen and (min-width: 1201px) {
+  .faq-question {
+    width: 60%;
+    font-size: 26px;
+    /* Adjust font size for extra large screens */
+  }
+
+  .faq-answer {
+    width: 60%;
+    font-size: 24px;
+  }
+
+  .faq-heading {
+    font-size: 29px;
+  }
+}
+
 
