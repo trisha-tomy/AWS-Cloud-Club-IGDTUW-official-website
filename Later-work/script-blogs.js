@@ -1,11 +1,19 @@
 const titles = [
-    "Blog Heading 1", "Blog Heading 2", "Blog Heading 3",
-    "Blog Heading 4", "Blog Heading 5", "Blog Heading 6",
-    "Blog Heading 7", "Blog Heading 8", "Blog Heading 9"
+    "AWS Unveiled: The Definitive Handbook on Amazon Web Services"
+    , "Getting Started with Cloud Computing: Basics and Benefits", "Understanding AWS Services: A Primer for Beginners",
+    "Cloud Security 101: Keeping Your Data Safe on AWS"
+    , "Migrating to the Cloud: Steps for a Successful Transition"
+    , "Budgeting for the Cloud: Tips for AWS Newbies"
+    ,
+    "Introduction to Serverless Computing: Building Apps Without Infrastructure"
+    , "A Beginner’s Guide to Building Your First Cloud Application on AWS"
+    , "Networking Basics on AWS: Understanding VPCs and Subnets"
+    
+  
   ];
   
   // Date doesn't seem to work properly on Codepen??? so using hardcoded values;
-  const times = ['9-17-16', '9-18-16', '9-19-16','9-17-16', '9-18-16', '9-19-16','9-17-16', '9-18-16', '9-19-16'];
+  const times = ['12-04-24', '14-04-24', '17-04-24','22-04-24', '25-04-24', '28-04-24','30-04-24', '03-05-24', '08-05-24'];
   const authors = ['author 1', 'author2', 'author3','author 4', 'author5', 'author6','author 7', 'author8', 'author9'];
   const num_cards = titles.length;
   
